@@ -40,12 +40,12 @@ export default function LandingPageBanner() {
             From {slide.price} or {slide.monthly} per month
           </p>
           <div className="flex gap-3 pt-2">
-            {/* <Link
-              to="/products"
+            <Link
+              to="/product"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-colors"
             >
               Buy Now
-            </Link> */}
+            </Link>
             <button className="border border-gray-400 text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-white transition-colors">
               Learn More
             </button>
