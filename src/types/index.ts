@@ -8,6 +8,8 @@ export interface Product {
   badge?: "NEW" | "SALE" | "HOT";
   discount?: number;
   description?: string;
+  rating?: number;
+  reviews?: number;
 }
 
 export interface Category {

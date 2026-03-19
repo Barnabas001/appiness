@@ -48,7 +48,7 @@ const promos = [
     action: "Learn More",
     bg: "bg-purple-50",
     image:
-      "https://photos5.appleinsider.com/gallery/0-137264-14-inch-MacBook-Pro-1-xl.jpg",
+      "https://www.cultofmac.com/wp-content/uploads/2025/10/unboxing-M5-MacBook-Pro.jpg",
   },
 ];
 
