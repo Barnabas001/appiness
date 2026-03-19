@@ -41,7 +41,7 @@ export default function LandingPageBanner() {
           </p>
           <div className="flex gap-3 pt-2">
             <Link
-              to="/product"
+              to="/products"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-colors"
             >
               Buy Now

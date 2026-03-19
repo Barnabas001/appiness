@@ -1,11 +1,16 @@
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
-import LandingPageBanner from "./components/home/LandingPageBanner";
+import HomePage from "./pages/HomePage";
+import ProductsPage from "./pages/ProductsPage";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <LandingPageBanner />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/products" element={<ProductsPage />} />
+      </Routes>
     </>
   );
 }
