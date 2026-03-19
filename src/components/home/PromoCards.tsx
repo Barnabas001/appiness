@@ -8,48 +8,47 @@ const promos = [
     price: "#2,000,000.00",
     action: "Buy Now",
     bg: "bg-blue-50",
-    imgBg: "#dbeafe",
-    imgText: "Iphone17",
+    image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg",
   },
   {
     badge: "15% OFF",
-    title: "Smartwatch 7",
+    title: "Samsung Galaxy Watch 7",
     subtitle: "Light On Price.",
-    price: "400,000.00",
+    price: "320,000.00",
     action: "Learn More",
     bg: "bg-pink-50",
-    imgBg: "#fce7f3",
-    imgText: "Smartwatch",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1iUKkwYOYcKqMd9RXxkqowEWoxn-rvXKqeoh-FO81-A&s&ec=121585071",
   },
   {
     badge: "BEST PRICE",
-    title: "5th Generation AirPods.",
+    title: "AirPods 4.",
     subtitle: "",
-    price: "#250,000.00",
+    price: "#200,000.00",
     action: "Learn More",
     bg: "bg-gray-50",
-    imgBg: "#f3f4f6",
-    imgText: "AirPods",
+    image:
+      "https://www.apple.com/v/airpods-4/g/images/overview/bento-gallery/bento_case_open__63kccmu775u6_small.jpg",
   },
   {
     badge: "FLAT 25% OFF",
-    title: "Headset Max 3rd Generation.",
+    title: "Airpods Max. Best Sound Quality",
     subtitle: "",
-    price: "$549.00",
+    price: "#500,000.00",
     action: "Buy Now",
     bg: "bg-blue-50",
-    imgBg: "#dbeafe",
-    imgText: "Headset",
+    image:
+      "https://www.istore.com.ng/cdn/shop/products/amg_1_1200x.jpg?v=1616762774",
   },
   {
     badge: "NEWLY ADDED",
-    title: "Mac Book Pro. New Arrival",
+    title: "Mac Book Pro m5. New Arrival",
     subtitle: "",
     price: "#3,000,000.00",
     action: "Learn More",
     bg: "bg-purple-50",
-    imgBg: "#ede9fe",
-    imgText: "MacBook",
+    image:
+      "https://photos5.appleinsider.com/gallery/0-137264-14-inch-MacBook-Pro-1-xl.jpg",
   },
 ];
 
@@ -83,7 +82,7 @@ export default function PromoCards() {
               </Link>
             </div>
             <img
-              src={`https://placehold.co/120x100/${promo.imgBg.replace("#", "")}/${promo.imgBg.replace("#", "")}?text=${promo.imgText}`}
+              src={promo.image}
               alt={promo.title}
               className="h-24 object-contain opacity-80"
             />
