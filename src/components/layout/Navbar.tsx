@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Search, ShoppingCart, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useCartStore } from "../../store/cartStore";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [cartCount] = useState(0);
+  const cartCount = useCartStore((s) => s.totalItems());
   return (
     <header className="bg-gray-900 text-white sticky top-0 z-50">
       <div className="text-xs bg-gray-800 text-gray-400 flex justify-between px-6 py-1.5">
