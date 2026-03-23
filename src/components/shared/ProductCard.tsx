@@ -53,7 +53,7 @@ export default function ProductCard({ product }: Props) {
 
         {/* Price */}
         <div>
-          <span>${product.price.toLocaleString()}</span>
+          <span>#{product.price.toLocaleString()}</span>
           {product.originalPrice && (
             <span>#{product.originalPrice.toLocaleString()}</span>
           )}
